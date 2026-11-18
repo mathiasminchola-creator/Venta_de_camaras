@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valkat - Casa Inteligente</title>
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">VALKAT</div>
+        <nav>
+            <a href="/SitioWeb/Camaras de seguridad/Proyecto.html">Cámaras de seguridad</a>
+            <a href="/SitioWeb/casainteligente/casainteligente/casainteligente.html">Casa inteligente</a>
+            <a href="#">Dónde comprar</a>
+            <a href="#">Soporte</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Casa inteligente</h1>
+            <p>ABRE LAS PUERTAS AL CONFORT Y A LA SEGURIDAD...</p>
+        </div>
+    </section>
+
+    <section class="categories">
+        <button class="btn-filter active">TODOS</button>
+        <button class="btn-filter">CÁMARAS DE INTERIOR</button>
+        <button class="btn-filter">CÁMARAS DE EXTERIOR</button>
+        <button class="btn-filter">ACCESORIOS</button>
+    </section>
+
+    <section class="secondary-banner">
+        <img src="banner-camara.webp" alt="Monitoreo desde celular" class="full-img">
+    </section>
+
+    <section class="products-grid">
+        <div class="product-card">
+            <img src="cerradura.webp" alt="Cerradura Inteligente">
+            <button class="btn-more" onclick="agregarAlCarrito('Cerradura Inteligente')">AÑADIR AL CARRITO</button>
+            <h3>CERRADURA INTELIGENTE CON HUELLA DACTILAR</h3>
+        </div>
+        <div class="product-card">
+            <img src="mirilla.jpg" alt="Mirilla Inteligente">
+            <button class="btn-more" onclick="agregarAlCarrito('Mirilla Inteligente')">AÑADIR AL CARRITO</button>
+            <h3>MIRILLA INTELIGENTE INALÁMBRICA</h3>
+        </div>
+        <div class="product-card">
+            <img src="camara.webp" alt="Cámara de Seguridad">
+            <button class="btn-more" onclick="agregarAlCarrito('Cámara Inalámbrica')">AÑADIR AL CARRITO</button>
+            <h3>CÁMARA DE SEGURIDAD INALÁMBRICA</h3>
+        </div>
+        <div class="product-card">
+            <img src="detector.webp" alt="Detector de Movimiento">
+            <button class="btn-more" onclick="agregarAlCarrito('Detector de Movimiento')">AÑADIR AL CARRITO</button>
+            <h3>DETECTOR DE MOVIMIENTO CON ALARMA</h3>
+        </div>
+        <div class="product-card">
+            <img src="foco.webp" alt="Foco Inteligente">
+            <button class="btn-more" onclick="agregarAlCarrito('Foco Inteligente')">AÑADIR AL CARRITO</button>
+            <h3>FOCO INTELIGENTE LED RGB</h3>
+        </div>
+        <div class="product-card">
+            <img src="enchufe.webp" alt="Enchufe Inteligente">
+            <button class="btn-more" onclick="agregarAlCarrito('Enchufe Inteligente')">AÑADIR AL CARRITO</button>
+            <h3>ENCHUFE INTELIGENTE WI-FI</h3>
+        </div>
+        <div class="product-card">
+            <img src="alarma.webp" alt="Kit de Alarma">
+            <button class="btn-more" onclick="agregarAlCarrito('Kit de Alarma')">AÑADIR AL CARRITO</button>
+            <h3>KIT DE ALARMA PARA EL HOGAR</h3>
+        </div>
+        <div class="product-card">
+            <img src="sensor-puerta.webp" alt="Sensor de Puerta">
+            <button class="btn-more" onclick="agregarAlCarrito('Sensor de Puerta')">AÑADIR AL CARRITO</button>
+            <h3>SENSOR DE APERTURA DE PUERTAS</h3>
+        </div>
+    </section>
+
+    <div class="cart-floating" onclick="verCarrito()">
+        🛒 <span id="cart-count">0</span>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h4>Productos</h4>
+            <a href="#">Cámaras</a>
+            <a href="#">Casa Inteligente</a>
+        </div>
+        <div class="footer-column">
+            <h4>Sobre Valkat</h4>
+            <a href="#">¿Quiénes somos?</a>
+            <a href="#">Contáctanos</a>
+        </div>
+        <div class="footer-column">
+            <h4>Contacto</h4>
+            <p>RUC: 20601007001</p>
+            <p>Email: ventas@valkatstore.com</p>
+        </div>
+    </footer>
+
+    <script>
+        let contador = 0;
+        let productosAgregados = [];
+
+        function agregarAlCarrito(nombreProducto) {
+            contador++;
+            document.getElementById('cart-count').innerText = contador;
+            productosAgregados.push(nombreProducto);
+            alert("¡Excelente elección! Agregaste " + nombreProducto + " al carrito.");
+        }
+
+        function verCarrito() {
+            if(contador === 0) {
+                alert("Tu carrito está vacío. ¡Añade algunos productos inteligentes!");
+            } else {
+                alert("Tienes " + contador + " productos listos:\n- " + productosAgregados.join("\n- "));
+            }
+        }
+    </script>
+</body>
+</html>

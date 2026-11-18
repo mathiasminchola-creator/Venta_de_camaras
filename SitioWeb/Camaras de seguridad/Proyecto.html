@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALKAT - Cámaras de seguridad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="brand">
+            <img src="empresa1.jpg" alt="Logo Valkat" class="logo-circular">
+            <span class="logo-bold">VALKAT</span>
+            <a href="/SitioWeb/Pagina Principal/FINAL.HTML" class="active"></a>
+            <span class="logo-divider">|</span>
+            <span class="logo-text">Automatiza tu hogar de forma simple y segura.</span>
+        </div>
+        <nav class="nav-links">
+            <a href="/SitioWeb/Camaras de seguridad/Proyecto.html" class="active">Cámaras de seguridad</a>
+            <a href="/SitioWeb/casainteligente/casainteligente/casainteligente.html">Casa inteligente</a> 
+            <a href="#">Dónde comprar</a>
+            <a href="#">CloudPlay</a>
+            <a href="#">Soporte</a>
+        </nav>
+        <div class="nav-icons">
+            <span class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="icon-lang"><i class="fa-solid fa-globe"></i> América Latina ▾ </span>
+            <span class="icon-cart" onclick="toggleCarrito()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Cámaras de seguridad</h1>
+            <p>CÁMARAS LISTAS PARA PROTEGERTE<br>DÍA Y NOCHE.</p>
+        </div>
+        <div class="hero-images-container"></div>
+    </section>
+
+    <section class="category-section">
+        <div class="buttons-container">
+            <button class="btn-cat">Cámaras de batería</button>
+            <button class="btn-cat">Cámaras de interior</button>
+            <button class="btn-cat">Cámaras de exterior</button>
+            <button class="btn-cat">Accesorios</button>
+        </div>
+    </section>
+
+    <main class="main-container">
+        
+        <section class="banner-seccion banner-bateria">
+            <div class="banner-content">
+                <h2>Cámaras de batería</h2>
+            </div>
+        </section>
+
+        <section class="productos-container">
+            <div class="productos-grid">
+                <div class="card">
+                    <div class="card-img-placeholder prod-1"></div>
+                    <h3 class="producto-titulo">Eufy SoloCam S340</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-2"></div>
+                    <h3 class="producto-titulo">EZVIZ eLife 2K+</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-3"></div>
+                    <h3 class="producto-titulo">HB8</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-4"></div>
+                    <h3 class="producto-titulo">BC2</h3>
+                    <div class="acciones acciones-dobles">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('BC2')">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-5"></div>
+                    <h3 class="producto-titulo">CB3</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('CB3')">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-6"></div>
+                    <h3 class="producto-titulo">CB2</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-7"></div>
+                    <h3 class="producto-titulo">HB90x Dual 4G Kit</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('HB90x Dual 4G Kit')">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-8"></div>
+                    <h3 class="producto-titulo">BC1-B1</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-9"></div>
+                    <h3 class="producto-titulo">HB90 Dual Kit</h3>
+                    <div class="acciones acciones-dobles">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('HB90 Dual Kit')">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-10"></div>
+                    <h3 class="producto-titulo">BM1</h3>
+                    <div class="acciones acciones-dobles">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="banner-seccion banner-interior">
+            <div class="banner-content">
+                <h2>Cámaras de interior</h2>
+            </div>
+        </section>
+        
+        <section class="productos-container">
+            <div class="productos-grid">
+                <div class="card">
+                    <div class="card-img-placeholder prod-int-1"></div>
+                    <h3 class="producto-titulo">EZVIZ C6N</h3>
+                    <div class="acciones acciones-dobles">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('EZVIZ C6N')">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-int-2"></div>
+                    <h3 class="producto-titulo">Xiaomi Smart Camera</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-int-3"></div>
+                    <h3 class="producto-titulo">EZVIZ C6 2K+</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-int-4"></div>
+                    <h3 class="producto-titulo">Hikvision</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-int-5"></div>
+                    <h3 class="producto-titulo">C6W</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-int-6"></div>
+                    <h3 class="producto-titulo">C2C 720p</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('C2C 720p')">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-int-7"></div>
+                    <h3 class="producto-titulo">C6CN mejorada</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('C6CN mejorada')">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-seccion banner-externa">
+            <div class="banner-content">
+                <h2>Cámaras de exterior</h2>
+            </div>
+        </section>
+
+        <section class="productos-container">
+            <div class="productos-grid">
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-1"></div>
+                    <h3 class="producto-titulo">C520WS</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-2"></div>
+                    <h3 class="producto-titulo">EZVIZ C3X</h3>
+                    <div class="acciones acciones-dobles">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('EZVIZ C3X')">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-3"></div>
+                    <h3 class="producto-titulo">Anksono</h3>
+                    <div class="acciones acciones-dobles">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('Anksono')">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-4"></div>
+                    <h3 class="producto-titulo">HB8</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-5"></div>
+                    <h3 class="producto-titulo">H4</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-6"></div>
+                    <h3 class="producto-titulo">H5 4G</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-7"></div>
+                    <h3 class="producto-titulo">H9c Dual 2K</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-8"></div>
+                    <h3 class="producto-titulo">LC3</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('LC3')">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-9"></div>
+                    <h3 class="producto-titulo">LC1C</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-10"></div>
+                    <h3 class="producto-titulo">C8W Pro 2K</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-11"></div>
+                    <h3 class="producto-titulo">C3TN</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ent-12"></div>
+                    <h3 class="producto-titulo">H8c 4G</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-seccion banner-accesorios">
+            <div class="banner-content">
+                <h2>Accesorios</h2>
+            </div>
+        </section>
+
+        <section class="productos-container">
+            <div class="productos-grid">
+                <div class="card">
+                    <div class="card-img-placeholder prod-ant-1"></div>
+                    <h3 class="producto-titulo">Panel solar de carga</h3>
+                    <div class="acciones">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder prod-ant-2"></div>
+                    <h3 class="producto-titulo">Soporte de montaje en pared</h3>
+                    <div class="acciones acciones-dobles">
+                        <button class="btn-product btn-leer">LEER MÁS</button>
+                        <button class="btn-product btn-comprar" onclick="agregarAlCarrito('Soporte de montaje en pared')">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="carrito-overlay" id="carritoOverlay" onclick="toggleCarrito()"></div>
+    <div class="carrito-panel" id="carritoPanel">
+        <div class="carrito-header">
+            <h3>🛒 Tu Carrito</h3>
+            <button onclick="toggleCarrito()">✕</button>
+        </div>
+        <div class="carrito-items" id="carritoItems">
+            <p class="carrito-vacio">Tu carrito está vacío.</p>
+        </div>
+        <div class="carrito-footer">
+            <p>Total: <strong id="carritoTotal">S/ 0.00</strong></p>
+            <button class="btn-checkout">Ir a pagar</button>
+        </div>
+    </div>
+    <script src="Carrito.js"></script>
+
+<!-- MDB framework -->
+ 
+ <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>VALKAT</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Productos
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Camaras de seguridad</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Casa inteligente</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Sobre Valkat
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">¿Quienes somos?</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">contactanos</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Información Legal
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Terminos y Condiciones</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Politica de Privacidad</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Libro de Reclamos</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-calendar me-3"></i>Lunes - Sábado 8:00am - 5:00pm</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            Ventas@valkat.store.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i>+51 973 229 089</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    Derechos de autor © 2026 valkat inc. Todos los derechos reservados
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>
